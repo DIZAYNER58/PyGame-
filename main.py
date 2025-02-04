@@ -1,8 +1,11 @@
 import pygame
-import random
 import time
-from lvl import load_level, levels
-from sprites import Pacman, Ghost
+from lvl import load_level_1, load_level_2, load_level_3, load_level_4, load_level_5, load_level_6, load_level_7, \
+    load_level_8, load_level_9, load_level_10, load_level_11, load_level_12, load_level_13, \
+    load_level_14, load_level_15, load_level_16, load_level_17, load_level_18, load_level_19, load_level_20, level_1, \
+    level_2, level_16, level_17, level_18, level_19, level_20, level_3, level_4, level_5, level_6, level_7, level_8, \
+    level_9, level_10, level_11, level_12, level_13, level_14, level_15
+
 
 # Инициализация Pygame
 pygame.init()
@@ -10,7 +13,7 @@ pygame.init()
 # Параметры экрана
 WIDTH, HEIGHT = 560, 620
 CELL_SIZE = 20
-
+a = input('Введите номер уровня:')
 # Цвета
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -28,7 +31,46 @@ clock = pygame.time.Clock()
 
 # Загрузка уровня
 current_level = 0
-walls, dots, ghosts, pacman = load_level(current_level)
+if a == '1':
+    walls, dots, ghosts, pacman = load_level_1()
+if a == '2':
+    walls, dots, ghosts, pacman = load_level_2()
+if a == '3':
+    walls, dots, ghosts, pacman = load_level_3()
+if a == '4':
+    walls, dots, ghosts, pacman = load_level_4()
+if a == '5':
+    walls, dots, ghosts, pacman = load_level_5()
+if a == '6':
+    walls, dots, ghosts, pacman = load_level_6()
+if a == '7':
+    walls, dots, ghosts, pacman = load_level_7()
+if a == '8':
+    walls, dots, ghosts, pacman = load_level_8()
+if a == '9':
+    walls, dots, ghosts, pacman = load_level_9()
+if a == '10':
+    walls, dots, ghosts, pacman = load_level_10()
+if a == '11':
+    walls, dots, ghosts, pacman = load_level_11()
+if a == '12':
+    walls, dots, ghosts, pacman = load_level_12()
+if a == '13':
+    walls, dots, ghosts, pacman = load_level_13()
+if a == '14':
+    walls, dots, ghosts, pacman = load_level_14()
+if a == '15':
+    walls, dots, ghosts, pacman = load_level_15()
+if a == '16':
+    walls, dots, ghosts, pacman = load_level_16()
+if a == '17':
+    walls, dots, ghosts, pacman = load_level_17()
+if a == '18':
+    walls, dots, ghosts, pacman = load_level_18()
+if a == '19':
+    walls, dots, ghosts, pacman = load_level_19()
+if a == '20':
+    walls, dots, ghosts, pacman = load_level_20()
 
 
 # Главный игровой цикл
